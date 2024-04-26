@@ -1,0 +1,178 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 241, 255);
+}
+.corpo{
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 2rem;
+    width: 650px;
+    background-color: #fff;
+}
+
+.container-do-corpo{
+    display: flex;
+    justify-content: space-between;
+}
+.resultado{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+    background: linear-gradient(to bottom, rgb(120, 87, 255), rgb(46, 43, 233));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.resultado .titulo{
+    color: rgb(200, 199, 255);
+    margin-bottom: 1rem;
+}
+
+.resultado .circulo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(78, 33, 202, 1), rgba(36, 33, 202, 0));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.circulo h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.circulo p{
+    color: rgb(200, 199, 255);
+}
+
+.resultado b{
+    color: rgb(200, 199, 255);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.resultado .info{
+    color: rgb(200, 199, 255);
+    width: 200px;
+}
+
+.sumario{
+    width: 50%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sumario .titulo{
+    color: #000;
+    font-weight: 800;
+}
+
+.linhas{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.linha{
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+}
+
+.linha:nth-child(1){
+    background-color: rgba(255, 87, 87, 0.2);
+}
+.linha:nth-child(1) .icone b{
+    color: rgb(255, 87, 87);
+}
+.linha:nth-child(2){
+    background-color: rgba(255, 176, 31, 0.2);
+}
+.linha:nth-child(2) .icone b{
+    color: rgb(255, 176, 31);
+}
+.linha:nth-child(3){
+    background-color: rgba(0, 189, 145, 0.2);
+}
+.linha:nth-child(3) .icone b{
+    color: rgb(0, 189, 145);
+}
+.linha:nth-child(4){
+    background-color: rgba(17, 37, 212, 0.2);
+}
+.linha:nth-child(4) .icone b{
+    color: rgb(17, 37, 212);
+}
+
+.linha p{
+    color: gray;
+}
+
+.linha p b{
+    color: rgb(48, 59, 90);
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.btn{
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background: rgb(48, 59, 90);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn:hover{
+    background: linear-gradient(to bottom, rgb(120, 87, 255), rgb(46, 43, 233));
+}
+
+@media screen and (max-width: 650px) {
+    body{
+        align-items: flex-start;
+        background-color: #fff;
+    }
+    .corpo{
+        box-shadow: none;
+    }
+    .container-do-corpo{
+        flex-direction: column;
+    }
+    .resultado{
+        border-radius: 0% 0% 10% 10%;
+        width: 100%;
+    }
+    .resultado .info{
+        width: 250px;
+    }
+    .sumario{
+        width: 100%;
+    }
+}
